@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <STDIO.H>
+#include <STDIO.H> 
 
 
 void titulo (){
@@ -72,6 +72,22 @@ void causas_consequencias(){
 	return;
 }
 
+void bug_final(){
+	printf("0 1 0 1 1 0 1 1 V O C E 0 0 0 1 1 1 0 1 0 1 0 1 0 0 1 0 1 1 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 0 1 0 \n");
+	printf("1 0 0 0 1 1 0 1 0 1 0 1 1 1 0 1 0 1 0 1 0 0 1 0 1 1 0 1 0 1 0 1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 0 1 0 \n");
+	printf("0 1 0 1 1 0 1 1 0 0 0 1 1 1 0 1 1 0 1 0 1 0 0 1 0 1 1 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 N A O 1 0 1 0 0 0 0 1 0 \n");
+	printf("1 0 0 1 0 1 0 1 1 0 0 1 1 1 0 1 0 1 0 1 1 0 0 1 0 0 1 0 1 1 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 0 1 0 \n");
+	printf("1 0 0 1 0 1 0 1 0 1 0 1 M E R E C E 0 1 0 1 0 1 0 0 1 0 1 1 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 0 1 0 \n");
+	printf("0 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 0 1 0 0 1 0 1 1 0 0 1 0 1 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 0 1 0 \n");
+	printf("0 1 0 1 1 0 1 1 0 0 0 1 1 1 0 1 0 1 0 0 1 0 1 1 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 P E R D A O 0 0 1 0 \n");
+	printf("0 1 0 1 1 0 1 1 0 0 0 1 1 1 0 1 0 1 0 1 0 1 0 1 0 0 1 0 1 1 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 0 1 0 \n");
+	printf("0 1 0 1 1 0 1 1 0 0 0 1 1 1 0 1 0 1 0 1 0 0 1 0 1 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 0 1 0 \n");
+	printf("1 0 1 0 1 0 1 0 0 1 0 1 1 0 1 0 0 1 0 0 1 0 1 0 1 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 0 1 1 0 1 0 1 0 1 1 0 1 0 0 0 \n");
+	return;
+}
+
+
+
 
 int main(int argc, char *argv[]) {
 	
@@ -101,13 +117,12 @@ int main(int argc, char *argv[]) {
 
 	elenco();
 	linha_na_tela();                                                
-		printf("\n");
+	printf("\n");
 	printf("%s - rico ranzinza \n", nome);
 	printf("Nathan Souza - mordomo da casa \n");
 	printf("Maria Clara - chefe das empregadas \n");
 	printf("Jisele Mendes - nova empregada \n");
 	linha_na_tela();    
-
 	limpa_tela();	
 	
 	//////////////////////////////////
@@ -128,7 +143,7 @@ int main(int argc, char *argv[]) {
 	//////////////////////////////////
 	// 2°QUADRO 
 	//////////////////////////////////
-	setlocale(LC_ALL,"Portuguese");
+
 	linha_na_tela();    
 	causas_consequencias();
 	linha_na_tela();    
@@ -179,8 +194,7 @@ int main(int argc, char *argv[]) {
 		printf("O brilho do dia clareia sua visão \n");
 		printf("O cansaço e a sensação de não ter dormido é grande.\n");
 		printf("Ao lado de sua macia, seu mordomo e amigo de infância, Nathan. \n");
-		linha_na_tela();    
-
+		linha_na_tela();   
 		limpa_tela();
 		break;
 	case'c':
@@ -219,31 +233,31 @@ int main(int argc, char *argv[]) {
 	switch(opc){
 		
 	case'a': 
-	linha_na_tela();    
-	printf("Maria Clara: Pois pegue você! Escória! Pensa que sou sua funcionária?\n");
-	linha_na_tela();   
-	limpa_tela();
-	break;
-	
+		linha_na_tela();    
+		printf("Maria Clara: Pois pegue você! Escória! Pensa que sou sua funcionária?\n");
+		linha_na_tela();   
+		limpa_tela();
+		break;
+		
 	case'b':
-	linha_na_tela();    
-	printf("Nathan: Você não era assim, o que aconteceu com você ?\n");
-	linha_na_tela();   
-	limpa_tela();
-	break;
+		linha_na_tela();    
+		printf("Nathan: Você não era assim, o que aconteceu com você ?\n");
+		linha_na_tela();   
+		limpa_tela();
+		break;
 	
 	case'c':
-	linha_na_tela();    
-	printf("Jisele: Bem que falaram o quanto você era um bicho preguiça!\n");
-	linha_na_tela();   
-	linha_na_tela();  
-	break;
+		linha_na_tela();    
+		printf("Jisele: Bem que falaram o quanto você era um bicho preguiça!\n");
+		linha_na_tela();   
+		limpa_tela(); 
+		break;
 	
 	default:
-	system("color 4");
-	printf("Erro 401 - variável inválida \n");
-	return 0;
-	break;
+		system("color 4");
+		printf("Erro 401 - variável inválida \n");
+		return 0;
+		break;
 	}
 	
 	//////////////////////////////////
@@ -282,10 +296,10 @@ int main(int argc, char *argv[]) {
 	break;
 	
 	default:
-	system("color 4");
-	printf("Erro 501 - variável inválida \n");
-	return 0;
-	break;
+		system("color 4");
+		printf("Erro 501 - variável inválida \n");
+		return 0;
+		break;
 	}
 
 	///////////////////////////////////
@@ -334,12 +348,11 @@ int main(int argc, char *argv[]) {
 	break;
 		
 	default:
-	system("color 4");
-	printf("Erro 601 - variável inválida \n");
-	return 0;
-	break;
-
-}
+		system("color 4");
+		printf("Erro 601 - variável inválida \n");
+		return 0;
+		break;
+	}
 
 	//////////////////////////////////
 	// 7°QUADRO 
@@ -397,11 +410,11 @@ int main(int argc, char *argv[]) {
 	break;
 	
 	default:
-	system("color 4");
-	printf("Erro 701 - variável inválida \n");
-	return 0;
-	break;
-}
+		system("color 4");
+		printf("Erro 701 - variável inválida \n");
+		return 0;
+		break;
+	}
 
 	//////////////////////////////////
 	// 8°QUADRO 
@@ -430,7 +443,8 @@ int main(int argc, char *argv[]) {
 	//////////////////////////////////
 	// 9°QUADRO 
 	//////////////////////////////////
-		
+	int pergunta;
+	 	
 	switch(opc){
 		
 	case'a':  
@@ -438,12 +452,21 @@ int main(int argc, char *argv[]) {
 		if (decisao == 1)
 			printf("Maria Clara: Até me emociona sua auto-reflexão \n");
 			printf("Maria Clara: Mas isso não muda aquilo que você fez \n");	
-			printf("Maria Clara: Mas é um passo, para quem saber mudar o que você vê em sua volta");
-			printf("Maria Clara: Te dou o direito a uma pergunta, pense bem ao escolher: ");
-		
+			printf("Maria Clara: Mas é um passo, para quem saber mudar o que você vê em sua volta\n");
+			printf("Maria Clara: Te dou o direito a uma pergunta, pense bem ao escolher: \n");
+			printf("[1] -> Como faço para sair daqui? \n");
+			printf("[2] -> Tudo aqui é real? \n");
+			printf("[3] -> Eu estou morto? \n");
+			scanf("%d", &pergunta);
+			limpa_tela();
+			break;
+				
 		if (decisao == 2)	
-			
-			
+			printf("Maria Clara: Por0 1  qu 0e eu1 0 0 espera1va algo d0e você? \n");
+			printf("Maria Clara: A 0 1 c 1 h 0 q0 1 ue 0 err0 es1 0 1tá 0e 1 0m 1 0m 1m, maldição %s !\n", nome);	
+			printf("Maria Clara: 1 0 0 1z 1 0 e s0 1 1 a1 0ch 1e foi 1 0 1 1 1 0, foi p1 0 o 1 0 d 1 es1 0 1dício...\n");	
+			bug_final();
+			return 0;	
 		linha_na_tela();    
 		limpa_tela();
 	break;
@@ -451,11 +474,25 @@ int main(int argc, char *argv[]) {
 	case'b':
 		linha_na_tela();    
 		if (decisao == 1)
+			printf("Nathan: Escute a voz da razão!\n");
+			printf("Nathan: O que passou, passou, o que importa é o agora, e o que você pode \n");
+			printf("Nathan: fazer hoje, o passado já foi, e o futuro ainda não chegou. \n");	
+			printf("Nathan: Mas já fico feliz por você perceber, e por tentar melhorar. \n");	
+			printf("Nathan: Será que posso te ajudar? Você tem alguma pergunta ? \n");
+			printf("[1] -> Como faço para sair daqui? \n");
+			printf("[2] -> Tudo aqui é real? \n");
+			printf("[3] -> Eu estou morto? \n");
+			scanf("%d", &pergunta);
+			limpa_tela();
+			break;
 			
-		
 		if (decisao == 2)	
-			
-			
+			printf("Nathan: M 0 1as que c0 beça 0ca %s !\n", nome);
+			printf("Nathan: Q 0u 1 0 1an 1tas 0 0 1 0veze 1 0s v0 ê precisa 1 0 1 0 0 errar?\n");
+			printf("Nathan: 1 0 0 d0 qu0 ac0nt 1 c 1 u f01 culp 1 0 1 1 sua!\n");	
+			printf("Nathan: 1 1 1 0 d 1 sp1 rd1 ce1  meu t 1 p 0  1aqui?\n");
+			bug_final();
+			return 0;
 		linha_na_tela();   
 		limpa_tela();
 	break;
@@ -463,38 +500,189 @@ int main(int argc, char *argv[]) {
 	case'c':
 		linha_na_tela();  
 		if (decisao == 1)
+			printf("Jisele: Finalmente um pouco de bom senso do patrão, hein! \n");
+			printf("Jisele: Cometemos erros sim %s\n", nome);
+			printf("Jisele: Mas continuar neles é burrice\n");
+			printf("Jisele: Fico feliz que tenha pensado um pouco mais\n");
+			printf("Jisele: Quem sabé há esperança... você têm alguma pergunta? \n");
+			printf("[1] -> Como faço para sair daqui? \n");
+			printf("[2] -> Tudo aqui é real? \n");
+			printf("[3] -> Eu estou morto? \n");
+			scanf("%d", &pergunta);
+			limpa_tela();
+			break;
 			
-		
 		if (decisao == 2)	
+			printf("Jisele: Mas que d 1 ab0 de 0 rgulh 0 é esse?\n");
+			printf("Jisele: Nã0 1 0 vê a s 1 tuaçã 0 1m qu1 s1 encontra?!\n");
+			printf("Jisele: 1 0 1 1 pr 1 c1 0 1 sava tanto de d 1 0 nhe 1 0r 0 qu1 0 m 1 0 sujeitei a isso?\n");
+			printf("Jisele: 1 0 1 1 1n 0 ao0 0 1 0 1 1 0  a 1 0gu 0 0ent 1 1o m 1 0 1s!\n");
+			bug_final();
+			return 0;
+		linha_na_tela();   	
+		limpa_tela();
+	break;
+	
+	default:
+		system("color 4");
+		printf("Erro 701 - variável inválida \n");
+		return 0;
+		break;
+	}
+
+	//////////////////////////////////
+	// 10°QUADRO 
+	//////////////////////////////////
+
+	switch(opc){
+		
+	case'a':  
+		linha_na_tela();  
+		if (pergunta == 1)
+			printf("Maria Clara: Sair da onde? Você não foi em nenhum lugar \n");
+			printf("Maria Clara: Você continua  no mesmo lugar em que sempre esteve \n");	
 			
+		if (pergunta == 2)	
+			printf("Maria Clara: Tudo aquilo que é real está a um passo de transformar-se em irreal \n");
+			printf("Maria Clara: Tudo aquilo que é irreal está a um passo se transformar-se em real \n");
+			printf("Maria Clara: No fim são só detalhes \n");
+		if (pergunta == 3)
+			printf("Maria Clara: A morte é um eterno estado de negação \n");
+		
+		linha_na_tela();    
+		limpa_tela();
+	break;
+	
+	case'b':
+		linha_na_tela();    
+		if (pergunta == 1)
+			printf("Nathan: Sair? Não é possível fugir do seu passado \n");
+			printf("Nathan: Estara sempre com você, faz parte do seu ser \n");
+			printf("Nathan: Não é possível sair de si mesmo \n");	
+		
+		if (pergunta == 2)	
+			printf("Nathan: Depende, qual a sua relação com o seu passado ? \n");
+			printf("Nathan: Quanto a sua visão sobre as coisas se aproximam da realidade ?\n");
+			printf("Nathan: Você decide se isso tudo foi real ou não \n");	
+
+		if (pergunta == 3)
+			printf("Nathan: A morte é um eterno estado de negação \n");
+		
+		linha_na_tela();   
+		limpa_tela();
+	break;
+	
+	case'c':
+		linha_na_tela();  
+		if (pergunta == 1)
+			printf("Jisele: Pensei que a casa fosse sua \n");
+			printf("Jisele: Não sabe a saída da própria casa ?\n");
+			
+		if (pergunta == 2)	
+			printf("Jisele: Como não poderia ser ? Melhor perguntando... \n");
+			printf("Jisele: Essa é a sua realidade ? \n");
+		
+		if (pergunta == 3)
+			printf("Jisele: A morte é um eterno estado de negação \n");
 			
 		linha_na_tela();   	
 		limpa_tela();
 	break;
 	
 	default:
-	system("color 4");
-	printf("Erro 701 - variável inválida \n");
-	return 0;
-	break;
-}
-
-	//////////////////////////////////
-	// 10°QUADRO 
-	//////////////////////////////////
-
-
+		system("color 4");
+		printf("Erro 1001 - variável inválida \n");
+		return 0;
+		break;
+	}
+	
 
 	//////////////////////////////////
 	// 11°QUADRO 
 	//////////////////////////////////
  
+	linha_na_tela(); 
+ 	//Como a resposta dos fantasmas serão sempre vagas, a reação mudar seria meio ?????
+ 	printf("Mas que droga de respostas são essas?\n");
+ 	printf("Isso nem sequer faz sentido!\n");
+ 	linha_na_tela();  
+	limpa_tela();
+	printf("Na verdade...será que eles me entenderam?\n");
+	linha_na_tela(); 
+	limpa_tela();
+
  
  
 	//////////////////////////////////
 	// 12°QUADRO 
 	//////////////////////////////////
-
+	char irritar;
+	
+	linha_na_tela(); 
+	printf("Você não sente que já passou tempo demais aqui?\n");
+	printf("Tanto tempo para nada? isso não te aborrece?\n");
+	printf("Você não quer sair daqui? Essa angústia que não passa\n");
+	printf("Sair daqui...Nem que seja por mal\n");
+	printf("Ninguem te diz nada aqui...Você se irrita?\n");
+	printf("a-) Sim, me irrito\n");
+	printf("b-) não, talvez eu devesse pensar melhor\n");
+	scanf("%c", &irritar);
+	
+	switch(opc){
+		
+	case'a':  
+		linha_na_tela();  
+		if (irritar == 'a')
+			printf("%s: Mas que desgraça! Nada aqui presta!\n", nome);
+			printf("%s: Achei que você Maria, estaria aqui para me ajudar!\n", nome);
+			printf("%s: Que você suma daqui!\n", nome);
+		
+		
+		if (decisao == 'b')	
+			printf("%s: Maria...Pensamentos vem e vão, mas você acha que...\n", nome);
+			printf("%s: Existem coisas imperdoáveis?\n", nome);
+				
+			
+		linha_na_tela();    
+		limpa_tela();
+	break;
+	
+	case'b':
+		linha_na_tela();    
+		if (irritar == 'a')
+			printf("%s: Diga-me Nathan! Que raio de situação é essa?\n", nome);
+			printf("%s: Você era para ser meu amigo! Não o oposto!\n", nome);
+			printf("%s: Desde que cheguei aqui não ouvi nada de útil!\n", nome);
+			printf("%s: Que você suma!\n", nome);
+		
+		if (decisao == 'b')	
+			printf("%s: Velho amigo...O tempo não foi generoso comigo\n", nome);
+			printf("%s: Obrigado por sempre ter estado comigo, mesmo nos piores momentos!\n", nome);
+			
+		linha_na_tela();   
+		limpa_tela();
+	break;
+	
+	case'c':
+		linha_na_tela();  
+		if (irritar == 'a')
+			printf("%s: Quanta baboseira vinda de uma novata! Não suporto você!\n", nome);
+			printf("%s: Só me surgem desgraças! Até mesmo nessa idade!\n", nome);
+		
+		if (decisao == 'b')
+			printf("%s: Haha..Até mesmo alguém nova aqui é capaz de me ajudar, não é?\n", nome);
+			printf("%s: Não há motivo para fúria...Acho que já entendi...Ou pelo menos acho!\n", nome);
+			
+			
+		linha_na_tela();   	
+		limpa_tela();
+	default:
+		system("color 4");
+		printf("Erro 1201 - variável inválida \n");
+		return 0;
+		break;
+		
+}
 
 
 	//////////////////////////////////
@@ -506,11 +694,12 @@ int main(int argc, char *argv[]) {
 		
 		case'a': 
 			linha_na_tela();    
+			printf("%s: Mas em fim, me responda logo \n", nome);
 			printf("%s: Como cheguei nessa situação?...\n", nome);
 			printf("Maria Clara: Me diga você, já te aguentei tanto! Mesmo te odiando\n");
 			printf("Maria Clara: Foi insuportável!\n");
-			printf("Você sempre me maltratou, mas fui a única que segui sem hesitar\n");		
-			printf("valeria a pena se arrepender realmente?\n");
+			printf("Maria Clara: Você sempre me maltratou, mas fui a única que segui sem hesitar\n");		
+			printf("Maria Clara: valeria a pena se arrepender realmente?\n");
 			printf("Maria Clara: Acho que você não tem um coração capaz de sentir pena\n");
 			linha_na_tela();    
 			limpa_tela();
@@ -518,17 +707,19 @@ int main(int argc, char *argv[]) {
 		
 		case'b':
 			linha_na_tela();    
+			printf("%s: Mas em fim, me responda logo \n", nome);
 			printf("%s: Que fundo de poço é esse??", nome);
 			printf("Nathan: Respire fundo, velho amigo! Só não podemos mudar quem somos \n", nome);
-			printf("Quando morremos, até lá você tem tempo para refletir \n");
-			printf("Uma sensação diferente inunda seu peito, como se sente?\n");
-			printf("está aberto a mudanças? \n");
+			printf("Nathan: Quando morremos, até lá você tem tempo para refletir \n");
+			printf("Nathan: Uma sensação diferente inunda seu peito, como se sente?\n");
+			printf("Nathan: está aberto a mudanças? \n");
 			linha_na_tela();   
 			limpa_tela();
 		break;
 		
 		case'c':
 			linha_na_tela();   
+			printf("%s: Mas em fim, me responda logo \n", nome);
 			printf("%s: Como?...Tudo isso ocorreu?...\n", nome);
 			printf("Jisele: Tudo parecia melhor quando comecei a trabalhar, mas não era assim\n");
 			printf("Jisele: Você parecia ser uma boa pessoa e não esse monstro, fui enganada?\n");
@@ -539,22 +730,103 @@ int main(int argc, char *argv[]) {
 		break;
 	
 		default:
-		system("color 4");
-		printf("Erro 1301 - variável inválida \n");
-		return 0;
-		break;
-		
-		}
+			system("color 4");
+			printf("Erro 1301 - variável inválida \n");
+			return 0;
+			break;
 	}
+	
 	//////////////////////////////////
 	// 14°QUADRO 
 	//////////////////////////////////
-	
-	
+	linha_na_tela();
+	printf(" No fim... Somos todos humanos \n");
+	limpa_tela();
+	printf(" Não somos perfeitos, nos adaptamos as necessidades \n");	
+	linha_na_tela();
+	printf(" Mas os fins justificam os meios ? \n");	
+	limpa_tela();
+	linha_na_tela();
+	printf(" O passado nos tornou o que somos hoje \n");	
+	limpa_tela();
+	linha_na_tela();
+	printf(" O futuro é reflexo do fazemos hoje  \n");	
+	limpa_tela();
+	linha_na_tela();
+	printf(" O hoje é aquilo que a gente pode controlar mas é onde a gente menos encherga \n");	
+	limpa_tela();
+	linha_na_tela();
+	printf(" Mas existe expaço para o arrependimento ?  \n");	
+	printf(" Mas arreependimento pelo que ? \n");
+	printf(" O ontem é o hoje de antigamente, e o futuro é hoje de amanhã \n");
+	printf(" No fim, concordamos, o arrependimento é apenas do hoje que já que virá \n");
+	limpa_tela();
+	linha_na_tela();
+	printf(" Demoramos para refletir e entender nossos erros \n");	
+	printf(" No fim, nos perguntamos - Por que só agora ? \n");
+	printf(" Por quê não ontem? Já é tarde de mais \n");
+	printf(" Por que não amanhã? Prorrogar a reflexão \n");
+	limpa_tela();
+	linha_na_tela();
+	printf(" No fim, dói, não é ? \n");	
+	printf(" De qualquer maneira vai doer \n");
+	limpa_tela();
+	linha_na_tela();
+	printf(" A dor de uma ferida aberta\n");	
+	printf(" Uma ferida mal curada, sangra  \n");
+	printf(" Mas só sangra em cima de quem não tem culpa de nada \n");
+	printf(" E manchamos os outros com nosso sangue de feridas mal sicatrizadas \n");
+	limpa_tela();
+	linha_na_tela();
+	printf(" Merecemos uma segunda chance? \n");
+	printf("[1] Sim \n");
+	printf("[2] Não \n");
+	scanf("%d", &decisao );
+	limpa_tela();
+	linha_na_tela();
 	//////////////////////////////////
 	// 15°QUADRO 
 	//////////////////////////////////
-	
+	if (decisao == 1)
+		linha_na_tela();  
+		printf(" A auto piedade é um grande passo para conseguir seguir em frente \n");
+		printf(" Perdoar-se é o momento mais difícil da trajetória \n");
+		linha_na_tela();  
+		limpa_tela();
+		printf("  Toc\n");
+		linha_na_tela();  
+		limpa_tela();
+		printf("  Toc Toc\n");
+		linha_na_tela();  
+		limpa_tela();
+		printf("  Toc Toc toc \n");
+		linha_na_tela();  
+		limpa_tela();
+		printf("Maria Clara: Bom dia, senhor %s  \n", nome);
+		printf("Maria Clara: Já 11 horas, o senhor deve estar com fome \n");
+		printf("Maria Clara: Estamos esperando suas ordens  \n");
+	if (decisao == 2)
+		linha_na_tela();  
+		printf(" É normal, achar que não merece perdão \n");
+		printf(" Mas a retratação, a mudança, a evolução. ela só para quando desistimos \n");
+		printf(" Perdoar-se também faz parte da trajetória \n");
+			linha_na_tela();  
+		limpa_tela();
+		printf("  Toc\n");
+		linha_na_tela();  
+		limpa_tela();
+		printf("  Toc Toc\n");
+		linha_na_tela();  
+		limpa_tela();
+		printf("  Toc Toc toc \n");
+		linha_na_tela();  
+		limpa_tela();
+		printf("Maria Clara: Bom dia, senhor %s  \n", nome);
+		printf("Maria Clara: Já 11 horas, o senhor deve estar com fome \n");
+		printf("Maria Clara: Estamos esperando suas ordens  \n");
+		
+	linha_na_tela();   
+	limpa_tela();
 	
  	//////////////////////////////////
 	// 16°QUADRO 
@@ -564,5 +836,8 @@ int main(int argc, char *argv[]) {
 
 
 
+
+
+}
 
 
