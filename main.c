@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
-#include <STDIO.H> 
+
 
 
 void titulo (){
@@ -28,7 +28,7 @@ void titulo (){
 	printf(" /  /  |  O  ||  |  | \\__  TY    _]|  Q  ||  |  |Y    _]|  |  |/  /   |  | |     |\\__  T        \n");    
 	printf("/   \\_ |     ||  |  | /  \\ ||   [_ |     ||  :  ||   [_ |  |  /   \\_  |  | |  _  |/  \\ |      \n");      
 	printf("\\     |l     !|  |  | \\    ||     Tl     |l     ||     T|  |  \\     | j  l |  |  |\\    |      \n");      
-	printf("\\____j \\___/ l__j__j  \\___jl_____j \\__,_j \\__,_jl_____jl__j__j\\____j|____jl__j__j \\___j    \n");         
+	printf(" \\____j \\___/ l__j__j  \\___jl_____j \\__,_j \\__,_jl_____jl__j__j\\____j|____jl__j__j \\___j    \n");         
 	return;                                                                                              
 }
 
@@ -131,24 +131,24 @@ int main(int argc, char *argv[]) {
 	//////////////////////////////////
 	int dificuldade = 0;
 	
-	linha_na_tela();  	
-	prefacio();                  
-	linha_na_tela();    
-	printf("Você, %s, é um homem rico, ranzinza e carrega um grande amargor pela vida.\n ", nome);
-	printf("Mora em uma enorme mansão e possui muitos funcionários. Por não ter empatia exige que seus \n");
-	printf("Funcionários fiquem até antes de você dormir e estejam na mansão antes que você acorde.\n");
-	printf("Um dia, quando mal-humorado, libera seus funcionários no meio da madrugada e começa a fazer \n");
-	printf("sua rotina antes de dormir... \n");
-	printf("Antes de entrar em seu quarto, vai em direção ao cofre de sua casa \n");
-	printf("Para abrir o cofre será necessário descobrir o número secreto: \n");
 	do {
-	linha_na_tela();   
-	printf("Escolha o nível de segurança do cofre: \n");
-	printf("[1] -> Fácil \n");
-	printf("[2] -> Médio \n");
-	printf("[3] -> Difícil \n");
-	scanf("%d", &dificuldade);
-	system("cls");
+		linha_na_tela();  	
+		prefacio();                  
+		linha_na_tela();    
+		printf("Você, %s, é um homem rico, ranzinza e carrega um grande amargor pela vida.\n ", nome);
+		printf("Mora em uma enorme mansão e possui muitos funcionários. Por não ter empatia exige que seus \n");
+		printf("Funcionários fiquem até antes de você dormir e estejam na mansão antes que você acorde.\n");
+		printf("Um dia, quando mal-humorado, libera seus funcionários no meio da madrugada e começa a fazer \n");
+		printf("sua rotina antes de dormir... \n");
+		printf("Antes de entrar em seu quarto, vai em direção ao cofre de sua casa \n");
+		printf("Para abrir o cofre será necessário descobrir o número secreto: \n");
+		linha_na_tela();   
+		printf("Escolha o nível de segurança do cofre: \n");
+		printf("[1] -> Fácil \n");
+		printf("[2] -> Médio \n");
+		printf("[3] -> Difícil \n");
+		scanf("%d", &dificuldade);
+		system("cls");
 	} while (dificuldade!=1 && dificuldade!=2 && dificuldade!=3);
 	/////////////////
 	// CONFIGURANDO A RAND PARA NÚMEROS ALEATÓRIOS
@@ -413,7 +413,7 @@ int main(int argc, char *argv[]) {
 	
 	case'b':
 		linha_na_tela();   
-		printf("%s: Ma-Mas que lugar é esse?", nome);
+		printf("%s: Ma-Mas que lugar é esse? \n", nome);
 		printf("Nathan: Não reconhece? Não sente cheiro de infância? O som do sorveteiro na esquina \n", nome);
 		printf("Nathan: Vamos ouça! Os carros tão raros, mas a paisagem tão incrível\n");
 		printf("Nathan: Não sente saudade não é? Tudo antes era mais colorido e foi ficando mais cinza\n");
@@ -450,13 +450,17 @@ int main(int argc, char *argv[]) {
 	//////////////////////////////////	
 	
 	int decisao;
-	
+	do {
+	linha_na_tela();   
 	printf("Talvez o que os fantasma tentam te falar, possuam algum fundo de razão\n");
 	printf("Pensar nunca foi seu forte, do contrário, não estaria aqui\n");
 	printf("Você aceita o que o fantasma te fala?\n");
 	printf("[1] Sim \n");
 	printf("[2] Não \n");
 	scanf("%d", &decisao );
+	system("cls");
+	} while (decisao!=1 && decisao!=2 );
+
 
 	switch(opc){
 		
@@ -551,15 +555,17 @@ int main(int argc, char *argv[]) {
 	case'a':  
 		linha_na_tela();  
 		if (decisao == 1){
-			printf("Maria Clara: Até me emociona sua auto-reflexão \n");
-			printf("Maria Clara: Mas isso não muda aquilo que você fez \n");	
-			printf("Maria Clara: Mas é um passo, para quem saber mudar o que você vê em sua volta\n");
-			printf("Maria Clara: Te dou o direito a uma pergunta, pense bem ao escolher: \n");
-			printf("[1] -> Como faço para sair daqui? \n");
-			printf("[2] -> Tudo aqui é real? \n");
-			printf("[3] -> Eu estou morto? \n");
-			scanf("%d", &pergunta);
-			limpa_tela();
+			do {
+				printf("Maria Clara: Até me emociona sua auto-reflexão \n");
+				printf("Maria Clara: Mas isso não muda aquilo que você fez \n");	
+				printf("Maria Clara: Mas é um passo, para quem saber mudar o que você vê em sua volta\n");
+				printf("Maria Clara: Te dou o direito a uma pergunta, pense bem ao escolher: \n");
+				printf("[1] -> Como faço para sair daqui? \n");
+				printf("[2] -> Tudo aqui é real? \n");
+				printf("[3] -> Eu estou morto? \n");
+				scanf("%d", &pergunta);
+				limpa_tela();
+			} while (pergunta!=1 && pergunta!=2 && pergunta!=3);
 			break;
 		}
 		
@@ -578,18 +584,19 @@ int main(int argc, char *argv[]) {
 	case'b':
 		linha_na_tela();    
 		if (decisao == 1){
-			printf("Nathan: Escute a voz da razão!\n");
-			printf("Nathan: O que passou, passou, o que importa é o agora, e o que você pode \n");
-			printf("Nathan: fazer hoje, o passado já foi, e o futuro ainda não chegou. \n");	
-			printf("Nathan: Mas já fico feliz por você perceber, e por tentar melhorar. \n");	
-			printf("Nathan: Será que posso te ajudar? Você tem alguma pergunta ? \n");
-			printf("[1] -> Como faço para sair daqui? \n");
-			printf("[2] -> Tudo aqui é real? \n");
-			printf("[3] -> Eu estou morto? \n");
-			scanf("%d", &pergunta);
-			limpa_tela();
-			break;
-			
+			do {
+				printf("Nathan: Escute a voz da razão!\n");
+				printf("Nathan: O que passou, passou, o que importa é o agora, e o que você pode \n");
+				printf("Nathan: fazer hoje, o passado já foi, e o futuro ainda não chegou. \n");	
+				printf("Nathan: Mas já fico feliz por você perceber, e por tentar melhorar. \n");	
+				printf("Nathan: Será que posso te ajudar? Você tem alguma pergunta ? \n");
+				printf("[1] -> Como faço para sair daqui? \n");
+				printf("[2] -> Tudo aqui é real? \n");
+				printf("[3] -> Eu estou morto? \n");
+				scanf("%d", &pergunta);
+				limpa_tela();
+			} while (pergunta!=1 && pergunta!=2 && pergunta!=3);
+			break;	
 		}
 		
 		if (decisao == 2)	{
@@ -608,16 +615,18 @@ int main(int argc, char *argv[]) {
 	case'c':
 		linha_na_tela();  
 		if (decisao == 1){
-			printf("Jisele: Finalmente um pouco de bom senso do patrão, hein! \n");
-			printf("Jisele: Cometemos erros sim %s\n", nome);
-			printf("Jisele: Mas continuar neles é burrice\n");
-			printf("Jisele: Fico feliz que tenha pensado um pouco mais\n");
-			printf("Jisele: Quem sabé há esperança... você têm alguma pergunta? \n");
-			printf("[1] -> Como faço para sair daqui? \n");
-			printf("[2] -> Tudo aqui é real? \n");
-			printf("[3] -> Eu estou morto? \n");
-			scanf("%d", &pergunta);
-			limpa_tela();
+			do {
+				printf("Jisele: Finalmente um pouco de bom senso do patrão, hein! \n");
+				printf("Jisele: Cometemos erros sim %s\n", nome);
+				printf("Jisele: Mas continuar neles é burrice\n");
+				printf("Jisele: Fico feliz que tenha pensado um pouco mais\n");
+				printf("Jisele: Quem sabé há esperança... você têm alguma pergunta? \n");
+				printf("[1] -> Como faço para sair daqui? \n");
+				printf("[2] -> Tudo aqui é real? \n");
+				printf("[3] -> Eu estou morto? \n");
+				scanf("%d", &pergunta);
+				limpa_tela();
+			} while (pergunta!=1 && pergunta!=2 && pergunta!=3);
 			break;
 		}
 		
@@ -736,16 +745,18 @@ int main(int argc, char *argv[]) {
 	// 12°QUADRO 
 	//////////////////////////////////
 	int irritar;
-	
+	do {
+		printf("Você não sente que já passou tempo demais aqui?\n");
+		printf("Tanto tempo para nada? isso não te aborrece?\n");
+		printf("Você não quer sair daqui? Essa angústia que não passa\n");
+		printf("Sair daqui...Nem que seja por mal\n");
+		printf("Ninguem te diz nada aqui...Você se irrita?\n");
+		printf("[1] Sim, me irrito\n");
+		printf("[2] não, talvez eu devesse pensar melhor\n");
+		scanf("%d", &irritar);
+	} while (irritar!=1 && irritar!=2 );
 	linha_na_tela(); 
-	printf("Você não sente que já passou tempo demais aqui?\n");
-	printf("Tanto tempo para nada? isso não te aborrece?\n");
-	printf("Você não quer sair daqui? Essa angústia que não passa\n");
-	printf("Sair daqui...Nem que seja por mal\n");
-	printf("Ninguem te diz nada aqui...Você se irrita?\n");
-	printf("[1] Sim, me irrito\n");
-	printf("[2] não, talvez eu devesse pensar melhor\n");
-	scanf("%d", &irritar);
+
 	
 	switch(opc){
 		
@@ -901,13 +912,15 @@ int main(int argc, char *argv[]) {
 	printf(" Mas só sangra em cima de quem não tem culpa de nada \n");
 	printf(" E manchamos os outros com nosso sangue de feridas mal cicatrizadas \n");
 	linha_na_tela();
-	limpa_tela();
-	linha_na_tela();
-	printf(" Merecemos uma segunda chance? \n");
-	printf("[1] Sim \n");
-	printf("[2] Não \n");
-	scanf("%d", &decisao );
-	limpa_tela();
+	do {
+		limpa_tela();
+		linha_na_tela();
+		printf(" Merecemos uma segunda chance? \n");
+		printf("[1] Sim \n");
+		printf("[2] Não \n");
+		scanf("%d", &decisao );
+		limpa_tela();
+	} while (decisao!=1 && decisao!=2 );
 	//////////////////////////////////
 	// 15°QUADRO 
 	//////////////////////////////////
